@@ -1,0 +1,41 @@
+version: "3"
+services:
+    database:
+        image: mysql:5.7.20
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: 12345
+            MYSQL_DATABASE: usuarios
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+        volumes:
+            - "data:/var/lib/mysql"
+    webserver:
+        image: webdevops/apache:alpine
+        depends_on:
+            - php
+        ports: 
+            - "80:80"
+            - "443:443"
+        volumes: 
+            - ".:/var/www/html"
+        environment:
+            WEB_PHP_SOCKET: "php:9000"
+            WEB_PHP_TIMEOUT: 600
+            WEB_DOCUMENT_ROOT: "/var/www/html"
+    php:
+        image: mlalbuquerque/php:7.1
+        build:
+            context: ./dockerfiles
+            dockerfile: php7.1.dockerfile
+            args:
+                - "UID=$UID"
+                - "GID=$GID"
+                - "USER=$USER"
+        volumes:
+            - ".:/var/www/html"
+            - "./dockerfiles/config/php.ini:/usr/local/etc/php/php.ini"
+        environment:
+            PATH: "/root/.composer/vendor/bin:${PATH}"
+volumes:
+    data:
