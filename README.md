@@ -5,7 +5,7 @@
 
 <h2>Tutorial</h2>
     <ul>
-        <li>Instale o docker que atende o seu S.O , no caso va em 
+        <li>Instale o docker que atende o seu S.O , no caso vá em 
         https://www.docker.com/ em seguida get Docker e seleciona o seu S.O</li>
         <li>Faça o clone deste repositório</li>
         <li>Por fim vá dentro da pasta do docker e rode o comando docker-compose up</li>
