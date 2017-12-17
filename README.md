@@ -9,5 +9,7 @@
         https://www.docker.com/ em seguida get Docker e seleciona o seu S.O</li>
         <li>Faça o clone deste repositório</li>
         <li>Por fim vá dentro da pasta do docker e rode o comando docker-compose up</li>
+        <li>Para começar a trabalhar é so criar uma pasta de sua preferencia e comçar a com arquivos .php :)</li>
+        <li>Para acessar o MySQL é so acessar o seguint host:http://localhost:8080/</li>
     </ul>
 <p>Obs:Em alguns casos quando você tem o mysql instalado na sua maquína , ou algum web server é necessario parar os serviços deles devidos as portas utilizas por ambos</p>
