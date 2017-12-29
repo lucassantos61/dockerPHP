@@ -19,7 +19,9 @@
         <li>docker-compose down : destroi os containers.</li>
         <li>docker-compose stop : pausa os containers.</li>
         <li>docker ps : lista os containers ativos.</li>
+        <li>docker search NOME_DO_CONTAINER : Procura imagens do container.</li>
         <li>docker exec -it NOME_DO_CONTAINER sh : acessa o container.</li>
+        <li>docker rm NOME_DO_CONTAINER : Remove um container.</li>
         <li>dokcer kill NOME_DO_CONTAINER : mata os container indicado.</li>
     </ul>
 <p>Obs:Em alguns casos quando você tem o mysql instalado na sua maquína , ou algum web server é necessario parar os serviços deles devidos as portas utilizas por ambos.</p>
