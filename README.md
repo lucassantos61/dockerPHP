@@ -1,6 +1,6 @@
-## Docker com PHP  7.1 e MySQL 5.7 com phpMyAdmin
+# Docker com PHP  7.1 e MySQL 5.7 com phpMyAdmin
 
-### Descrição
+## Descrição
 O docker contém o PHP 7.1 e o MySQL 5.7 para facilitar , ambos rodando em cma do webser apache 2, este projeto ainda se encontra na fase inicial, caso esteja disposto a contribuir fique a vontade para fazer seu pull request.
 
 ## Tutorial
