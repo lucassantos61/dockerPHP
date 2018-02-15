@@ -19,4 +19,4 @@ O docker contém o PHP 7.1 e o MySQL 5.7 para facilitar , ambos rodando em cma d
     - docker exec -it NOME_DO_CONTAINER sh : acessa o container.
     - docker rm NOME_DO_CONTAINER : Remove um container.
     - dokcer kill NOME_DO_CONTAINER : mata os container indicado.
-Obs:Em alguns casos quando você tem o mysql instalado na sua maquína , ou algum web server é necessario parar os serviços deles devidos as portas utilizas por ambos.
+Obs:Em alguns casos quando você tem o mysql instalado na sua maquína , ou algum web server é necessario parar os serviços deles devidos as portas utilizadas por ambos.
