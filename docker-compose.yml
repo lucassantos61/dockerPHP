@@ -40,9 +40,9 @@ services:
             context: ./dockerfiles
             dockerfile: php7.1.dockerfile
             args:
-                - "UID=$UID"
-                - "GID=$GID"
-                - "USER=$USER"
+                - "UID=${UID}"
+                - "GID=${GID}"
+                - "USER=${USER}"
         volumes:
             - ".:/var/www/html"
             - "./dockerfiles/config/php.ini:/usr/local/etc/php/php.ini"
